@@ -1,4 +1,8 @@
 <div xmlns:tal="http://xml.zope.org/namespaces/tal" tal:omit-tag="">
   <textarea id="${field.oid}" name="${field.name}"
             class='tinymce' tal:content="structure cstruct" />
+
+  <script type="text/javascript">
+    $('#${field.oid}').wysihtml5();
+  </script>
 </div>
