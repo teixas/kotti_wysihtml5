@@ -14,7 +14,7 @@ install_requires = [
 
 setup(
     name='kotti_wysihtml5',
-    version='0.1',
+    version='0.2dev',
     description="wysihtml5 for Kotti",
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
