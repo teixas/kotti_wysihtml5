@@ -1,4 +1,5 @@
 .coverage
+Kotti.db
 *.pyc
 *.pt.py
 .cache/
