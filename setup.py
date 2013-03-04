@@ -14,7 +14,7 @@ install_requires = [
 
 setup(
     name='kotti_wysihtml5',
-    version='0.2dev',
+    version='0.1.1',
     description="wysihtml5 for Kotti",
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
@@ -27,7 +27,7 @@ setup(
     ],
     author='Nuno Teixeira',
     author_email='teixas@gmail.com',
-    url='https://github.com/teixa/kotti_wysihtml5',
+    url='https://github.com/teixas/kotti_wysihtml5',
     keywords='wysihtml5 bootstrap image browser kotti cms pylons pyramid',
     license="BSD",
     packages=find_packages(),
