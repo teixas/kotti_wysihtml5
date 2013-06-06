@@ -3,6 +3,6 @@
             class='tinymce' tal:content="structure cstruct" />
 
   <script type="text/javascript">
-    $('#${field.oid}').wysihtml5();
+    kotti_wysihtml5.init('#${field.oid}');
   </script>
 </div>

@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
 
 from fanstatic import Library
+from fanstatic import Resource
 
 from js.bootstrap_wysihtml5 import bootstrap_wysihtml5
 
 library = Library('kotti_wysihtml5', 'static')
+kotti_wysihtml5 = Resource(library,
+                           'kotti_wysihtml5.js',
+                           depends=[bootstrap_wysihtml5, ])
 
 
 def kotti_configure(settings):
@@ -20,8 +24,8 @@ def includeme(config):
         # kotti >= 0.8
         from js.deform import resource_mapping
         edit_needed = resource_mapping['tinymce'] = \
-            [bootstrap_wysihtml5, ]
+            [kotti_wysihtml5, ]
     except ImportError:  # pragma: no cover
         # kotti < 0.8
         from kotti.static import edit_needed
-        edit_needed.add(bootstrap_wysihtml5)
+        edit_needed.add(kotti_wysihtml5)
