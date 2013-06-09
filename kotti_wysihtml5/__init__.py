@@ -20,6 +20,7 @@ def kotti_configure(settings):
 
 def includeme(config):
     config.scan("kotti_wysihtml5")
+    config.scan("kotti_tinymce")
     try:
         # kotti >= 0.8
         from js.deform import resource_mapping
